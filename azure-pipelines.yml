@@ -13,7 +13,6 @@ steps:
 
 - task: Docker@2
   inputs:
-    containerRegistry: 'testRegPush'
-    repository: 'fjdwinfratestreg'
+    containerRegistry: 'fjdwinfratestreg'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
